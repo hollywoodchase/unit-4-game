@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Crystal Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="headline" class="col-sm-12 text-center">
+                <h1>Crystal Game</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="directions" class="col-sm-12 text-center">
+                <h2>Directions:</h2>
+                    <p>You will be shown a random number at the start of the game.
+                    <p>When you click on a crystal, it will add a specific amount of points to the player's total score.</p>
+                    <p>This value will be hidden until you click a crystal.</p>
+                    <p>When you click one, the score counter will be updated.</p>
+                    <p>In order to win, you must match your score with the random number</p>
+                    <p>If your score goes above the random number, you lose.</p>
+                    <p>The game restarts whenever you win or lose.</p>
+                    <p>When the game begins again, you will see a new random number. Also, all the crystals will have four new hidden values.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="crystals-box" class="col-sm-12 text-center">
+                <div id="c1" class="crystals">
+                    <img src="https://media.astralbrandsmedia.com/media/catalog/product/cache/2/image/1800x/040ec09b1e35df139433887a97daa66f/o/p/opti-crystal-swatch3-72dpi.jpg">
+                </div>
+                <div id="c2" class="crystals">
+                    <img src="https://d2f0ora2gkri0g.cloudfront.net/b4/31/b4310115-5a45-46a3-8b46-52785bd0a777.png">
+                </div>
+                <div id="c3" class="crystals">
+                    <img src="https://p.luckyretail.com/Uploadfile/20160530/002464/002464.jpg">
+                </div>
+                <div id="c4" class="crystals">
+                    <img src="http://kristalcanada.com/EN/wp-content/uploads/2013/10/030469006251-21.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="random-number" class="col-sm-4">
+                <h3>Random</h3>
+                <h2 id="random-space" class="info-boxes"></h2>
+            </div>
+            <div id="cumuliative-score" class="col-sm-4">
+                <h3>Cumulative</h3>
+                <h2 id="score-space" class="info-boxes"></h2>
+            </div>
+            <div id="final-message" class="col-sm-4">
+                <h3>Final Message</h3>
+                <h2 id="final-space" class="info-boxes"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div id="wins" class="col-sm-6">
+                <h3>Wins</h3>
+                <h3 id="wins-count"></h3>
+            </div>
+            <div id="losses" class="col-sm-6">
+                <h3>Losses</h3>
+                <h3 id="losses-count"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>

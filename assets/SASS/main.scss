@@ -1,0 +1,19 @@
+$border: (2px solid black);
+
+.row > div {
+    border: $border;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+#crystals-box {
+    flex-direction: row;
+}
+.crystals > img {
+    width: 100px;
+    height: 100px;
+}
+.info-boxes {
+    font-size: 35px;
+}
